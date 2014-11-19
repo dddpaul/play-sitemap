@@ -1,0 +1,19 @@
+/data
+/docs
+/out
+/classes
+/dist
+/lib
+/lib-src
+/logs
+/modules
+/test-result
+/tmp
+server.pid
+commands.pyc
+
+# IDEA project settings
+.idea
+*.ipr
+*.iws
+*.iml
