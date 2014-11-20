@@ -68,12 +68,12 @@ public class RenderSitemapXml extends RenderXml
         }
     }
 
-    protected static Element createUrl( Document doc, String loc, String changefreq, Double priority )
+    protected static Element createUrl( Document doc, String loc, String changefreq, int priority )
     {
         Element url = doc.createElement( "url" );
         appendTextElement( url, "loc", loc );
         appendTextElement( url, "changefreq", changefreq );
-        appendTextElement( url, "priority", priority );
+        appendTextElement( url, "priority", (double) priority / 100 );
         return url;
     }
 

@@ -26,10 +26,10 @@ public @interface InSitemap
     String changefreq() default "daily";
 
     /**
-     * The priority of this URL relative to other URLs on your site. Valid
-     * values range from 0.0 to 1.0. This value does not affect how your pages
-     * are compared to pages on other sites—it only lets the search engines know
-     * which pages you deem most important for the crawlers.
+     * The priority of this URL relative to other URLs on your site. The value does
+     * not affect how your pages are compared to pages on other sites—it only lets
+     * the search engines know which pages you deem most important for the crawlers.
+     * This value will divided by 100 before going to sitemap output.
      */
-    double priority() default 0.5;
+    int priority() default 50;
 }

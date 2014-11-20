@@ -1,4 +1,4 @@
-self: play-sitemap -> sitemap 0.1
+self: play-sitemap -> sitemap 0.2
 
 require:
     - play
